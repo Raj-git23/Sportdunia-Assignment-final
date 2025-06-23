@@ -2,7 +2,6 @@
 
 import { useAuth, AuthProvider } from "@/contexts/auth-context"
 import { LoginForm } from "@/components/login-form"
-import { Dashboard } from "@/components/dashboard"
 import { useRouter } from "next/navigation"
 import { useEffect } from "react"
 
