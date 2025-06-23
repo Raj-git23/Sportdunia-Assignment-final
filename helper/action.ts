@@ -27,7 +27,7 @@ export async function fetchNewsAPI({
   query = {},
 }: {
     type: "get" | "post" | "put" | "delete"
-    endpoint: string
+    endpoint?: string
     body?: any,
     query?: any,
   }) {
@@ -71,7 +71,7 @@ export async function fetchNewsAPI({
   let responseStatus = 500; // Default to 500 for unknown errors
   
   try {
-    const res = await fetch(`${baseUrl}/${endpoint}?api-key=${apiKey}&${params}`, {
+    const res = await fetch(`${baseUrl}&${params}`, {
       method: type.toUpperCase(),
       headers: {
         // "X-Api-Key": `${apiKey}`,

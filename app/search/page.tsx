@@ -46,7 +46,7 @@ const SearchResults = () => {
 
         const res = await fetchNewsAPI({
           type: "get",
-          endpoint: "search",
+          // endpoint: "search",
           query: {
             q: searchParams,
             'page-size': 20,

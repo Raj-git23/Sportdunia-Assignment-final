@@ -18,7 +18,7 @@ const TrendingNews = () => {
         try{
            const res = await fetchNewsAPI({
                 type:"get", 
-                endpoint: "search", 
+                // endpoint: "search", 
                 query: {
                     q: "breaking news OR viral OR trending",
                     'page-size': 24,

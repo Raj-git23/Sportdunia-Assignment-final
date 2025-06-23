@@ -90,7 +90,7 @@ const Discover = ({ filter }: DiscoverProps) => {
       // Guardian API endpoint is 'search' instead of 'everything'
       const res = await fetchNewsAPI({
         type: "get",
-        endpoint: "search",
+        // endpoint: "search",
         query: queryParams,
       });
 

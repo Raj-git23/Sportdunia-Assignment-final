@@ -25,7 +25,7 @@ const RecentNews = ({ filter }: RecentNewsProps) => {
       
       const res = await fetchNewsAPI({
         type: "get",
-        endpoint: "search",
+        // endpoint: "search",
         query: {
           q: activeFilter,
           'page-size': 4,

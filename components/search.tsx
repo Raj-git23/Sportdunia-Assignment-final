@@ -59,7 +59,7 @@ const Search = () => {
 
         const res = await fetchNewsAPI({
           type: "get",
-          endpoint: "search",
+          // endpoint: "search",
           query: {
             q: searchValue,
             'page-size': 5,
