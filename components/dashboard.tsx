@@ -98,13 +98,13 @@ export default function Dashboard() {
       setError("")
       
       const params = new URLSearchParams({
-        'api-key': GUARDIAN_API_KEY,
+        // 'api-key': GUARDIAN_API_KEY,
         'show-fields': 'headline,byline,trailText,thumbnail',
         'page-size': '50',
         'order-by': 'newest'
       })
 
-      const response = await fetch(`${GUARDIAN_BASE_URL}/search?${params}`)
+      const response = await fetch(`${GUARDIAN_BASE_URL}&${params}`)
       
       if (!response.ok) {
         throw new Error(`Guardian API error: ${response.status}`)
